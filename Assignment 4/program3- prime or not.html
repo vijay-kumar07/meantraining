@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> prime or not</title>
+</head>
+<body>
+	<h1>Prime or Not</h1>
+ 	<script type="text/javascript">
+ 		
+ 		count =0;
+ 		function isPrimeOrNot(num)
+ 		{
+ 			for(i=1;i<=num;i++)
+ 			{
+ 				if(num%i==0)
+ 				{
+ 				count++;
+	 				if(count>2)
+	 				{
+	 					break;
+	 				}
+		 		}	
+ 			}
+
+ 				return count;
+
+		}
+
+
+ 		finalcount =isPrimeOrNot(18);
+ 		if(finalcount==2)
+ 		{
+ 			console.log('Number is prime');
+ 		}
+ 		else
+ 		{
+ 			console.log('Number is not an prime');
+ 		}
+
+
+ 	</script>
+
+
+
+</body>
+</html>

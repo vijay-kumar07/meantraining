@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> electricity bill </title>
+</head>
+<body>
+	<h1> </h1>
+	<script type="text/javascript">
+		function calculateBill(unit)
+		{
+			if(unit<=100)
+			{
+				amount=unit*2;
+			}
+			else if(unit>100 && unit<=200)
+			{
+				amount = 200+((unit-100)*3);
+			}	
+			else if (unit>200) 
+			{
+				amount =200+300+((unit-200)*4);
+			}
+			return amount;
+		}
+
+		Totalamount=calculateBill(150);
+		console.log('Your electricity bill is ' + Totalamount);
+
+	</script>
+
+</body>
+</html>
